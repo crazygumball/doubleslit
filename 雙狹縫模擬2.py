@@ -28,3 +28,5 @@ for n in range(0,2001,1):
     delta_theta = ( 2 * pi / landa ) * delta_landa
     I = (mag((a0/r1_list[n])*vector(1,0,0) + vector((a0/r2_list[n]) * cos(delta_theta),(a0/r2_list[n])*sin(delta_theta),0)))**2
     intensity_list.append(I)
+for n in range(0,2001,1):
+    YI.plot(pos = (-1+0.001*n, intensity_list[n]))
